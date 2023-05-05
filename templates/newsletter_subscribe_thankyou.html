@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{%  block title %} Newsletter Subscribe Thankyou {% endblock %}
+
+{% block content %}
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title mb-4">Thank you for subscribing to our newsletter!</h5>
+          <p class="card-text">You will receive the latest news and updates from our hotel straight to your inbox.</p>
+          <a href="{% url 'home' %}" class="btn btn-primary mt-4">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

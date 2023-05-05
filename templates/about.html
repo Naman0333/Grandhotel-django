@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %} About {% endblock %}
+{% load static %}
+{% block content %}
+<!-- about.html -->
+<div class="container my-3">
+    <h1 class="text-center">About Our Hotel</h1>
+    <hr>
+    <p>Welcome to our hotel, located in the heart of the city. Our hotel has a rich history dating back to the early
+        1900s, and we have been providing exceptional hospitality to guests ever since.</p>
+    <p>We offer a range of amenities, including a fitness center, spa, and rooftop pool with stunning city views. Our
+        rooms are designed with comfort in mind and feature luxurious bedding, flat-screen TVs, and complimentary Wi-Fi.
+    </p>
+    <p>Whether you're traveling for business or pleasure, our hotel is the perfect choice for your stay. We're
+        conveniently located near popular attractions, restaurants, and shopping, and our friendly staff is always
+        available to assist you with anything you need.</p>
+
+    <!-- About page content -->
+    <div class="container my-2">
+        <!-- Owner card section -->
+        <h2 class="text-center">Meet the Owners</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'img/owner1.jpg' %}" class="card-img-top" alt="Owner 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">Owner and CEO</p>
+                        <p class="card-text text-justify">John is the owner and CEO of our hotel. With over 20 years of
+                            experience in
+                            the hospitality industry, he ensures that our guests have a comfortable and enjoyable stay.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'img/owner2.jpg' %}" class="card-img-top" alt="Owner 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text">Co-owner and CFO</p>
+                        <p class="card-text text-justify">Jane is the co-owner and CFO of our hotel. With her financial
+                            expertise,
+                            she keeps our business running smoothly and ensures that our guests receive the best value
+                            for their money.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'img/owner3.jpg' %}" class="card-img-top" alt="Owner 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bob Johnson</h5>
+                        <p class="card-text">Co-owner and CTO</p>
+                        <p class="card-text text-justify">Bob is the co-owner and CTO of our hotel. With his technical
+                            skills, he
+                            keeps our website and booking systems up-to-date and ensures that our guests have a seamless
+                            online booking experience.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

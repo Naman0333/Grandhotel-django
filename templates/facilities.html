@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Facilites{% endblock %}
+{% block content %}
+
+<!-- facilities.html -->
+<div class="container my-3">
+    <h1 class="text-center py-3">Our Facilities</h1>
+    <hr>
+    {% for facility in facilities %}
+        {% if forloop.first or forloop.counter0|divisibleby:2 %}
+            <div class="row mb-6">
+        {% endif %}
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="{{ facility.image.url }}" alt="{{ facility.name }}" style="height: 300px; object-fit: cover;">
+                <div class="card-body">
+                    <h4 class="card-title">{{ facility.name }}</h4>
+                    <p class="card-text">{{ facility.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% if forloop.last or forloop.counter|divisibleby:2 %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}
